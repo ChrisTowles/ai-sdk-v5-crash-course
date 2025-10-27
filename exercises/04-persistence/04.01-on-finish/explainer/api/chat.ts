@@ -10,7 +10,7 @@ export const POST = async (req: Request): Promise<Response> => {
   const { messages } = body;
 
   const result = streamText({
-    model: anthropic('claude-haiku-4-5');
+    model: anthropic('claude-haiku-4-5'),
     messages: convertToModelMessages(messages),
     onFinish: ({ response }) => {
       // 'response.messages' is an array of ToolModelMessage and AssistantModelMessage,

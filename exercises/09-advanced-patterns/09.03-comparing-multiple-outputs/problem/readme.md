@@ -15,7 +15,7 @@ const stream = createUIMessageStream<MyMessage>({
     });
 
     const secondStreamResult = streamText({
-      model: anthropic('claude-haiku-4-5');
+      model: anthropic('claude-haiku-4-5'),
       messages: modelMessages,
     });
 

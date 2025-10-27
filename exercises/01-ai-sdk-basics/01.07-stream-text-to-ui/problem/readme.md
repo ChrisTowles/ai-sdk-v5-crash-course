@@ -53,7 +53,7 @@ export const POST = async (req: Request): Promise<Response> => {
 
   // TODO: pass the modelMessages to streamText
   const streamTextResult = streamText({
-    model: anthropic('claude-haiku-4-5');
+    model: anthropic('claude-haiku-4-5'),
   });
 
   // TODO: create a UIMessageStream from the streamTextResult

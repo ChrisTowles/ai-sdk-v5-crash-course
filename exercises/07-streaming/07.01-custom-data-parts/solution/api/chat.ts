@@ -26,7 +26,7 @@ export const POST = async (req: Request): Promise<Response> => {
   const stream = createUIMessageStream<MyMessage>({
     execute: async ({ writer }) => {
       const streamTextResult = streamText({
-        model: anthropic('claude-haiku-4-5');
+        model: anthropic('claude-haiku-4-5'),
         messages: modelMessages,
       });
 
@@ -35,7 +35,7 @@ export const POST = async (req: Request): Promise<Response> => {
       await streamTextResult.consumeStream();
 
       const followupSuggestionsResult = streamText({
-        model: anthropic('claude-haiku-4-5');
+        model: anthropic('claude-haiku-4-5'),
         messages: [
           ...modelMessages,
           {

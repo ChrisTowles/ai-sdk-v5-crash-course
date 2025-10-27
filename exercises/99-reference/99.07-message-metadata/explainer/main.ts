@@ -9,7 +9,7 @@ type MyMetadata = {
 type MyMessage = UIMessage<MyMetadata>;
 
 const streamTextResult = streamText({
-  model: anthropic('claude-haiku-4-5');
+  model: anthropic('claude-haiku-4-5'),
   prompt: 'Hello, world!',
 });
 

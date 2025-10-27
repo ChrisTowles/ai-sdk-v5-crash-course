@@ -2,7 +2,7 @@
 import { streamText } from 'ai';
 
 import { anthropic } from '@ai-sdk/anthropic';
-const model = anthropic('claude-haiku-4-5');
+const model = anthropic('claude-haiku-4-5'),
 
 const stream = streamText({
   model,

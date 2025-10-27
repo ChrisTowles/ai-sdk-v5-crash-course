@@ -19,7 +19,7 @@ export const attributionToChainOfThoughtPaper = createScorer<
   name: 'Attribution',
   scorer: async ({ input, output, expected }) => {
     const result = await generateObject({
-      model: anthropic('claude-haiku-4-5');
+      model: anthropic('claude-haiku-4-5'),
       system: `
         You are a helpful assistant that can answer questions about the chain of thought prompting paper.
 

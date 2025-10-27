@@ -24,7 +24,7 @@ evalite('Chain Of Thought Paper', {
   ],
   task: async (input) => {
     const result = await generateText({
-      model: anthropic('claude-haiku-4-5');
+      model: anthropic('claude-haiku-4-5'),
       system: `
         You are a helpful assistant that can answer questions about the chain of thought prompting paper.
       `,

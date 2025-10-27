@@ -4,7 +4,7 @@ We're inside a `streamText` call here where we have a prompt saying, log the mes
 
 ```ts
 const result = streamText({
-  model: anthropic('claude-haiku-4-5');
+  model: anthropic('claude-haiku-4-5'),
   prompt: 'Log the message "Hello, world!" to the console',
   tools: {
     // ...explained below

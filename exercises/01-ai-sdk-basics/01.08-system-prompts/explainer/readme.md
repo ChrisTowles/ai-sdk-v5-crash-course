@@ -18,7 +18,7 @@ We're then passing the system prompt into [`streamText`](./api/chat.ts) here und
 
 ```ts
 const streamTextResult = streamText({
-  model: anthropic('claude-haiku-4-5');
+  model: anthropic('claude-haiku-4-5'),
   messages: modelMessages,
   system: SYSTEM_PROMPT,
 });

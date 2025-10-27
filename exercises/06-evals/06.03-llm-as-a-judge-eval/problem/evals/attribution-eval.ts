@@ -32,7 +32,7 @@ export const attributionToChainOfThoughtPaper = createScorer<
   name: 'Attribution',
   scorer: async ({ input, output }) => {
     const result = await generateObject({
-      model: anthropic('claude-haiku-4-5');
+      model: anthropic('claude-haiku-4-5'),
       system: ATTRIBUTION_PROMPT,
       messages: TODO, // TODO: Pass the chain of thought paper, the question and the answer given
       schema: TODO, // TODO: Define the schema for the response

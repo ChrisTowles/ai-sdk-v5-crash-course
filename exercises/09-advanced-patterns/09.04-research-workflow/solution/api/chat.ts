@@ -24,7 +24,7 @@ const generateQueriesForTavily = (
   modelMessages: ModelMessage[],
 ) => {
   const queriesResult = streamObject({
-    model: anthropic('claude-haiku-4-5');
+    model: anthropic('claude-haiku-4-5'),
     system: `
       You are a helpful assistant that generates queries to search the web for information.
 
@@ -127,7 +127,7 @@ const streamFinalSummary = async (
     .join('\n');
 
   const answerResult = streamText({
-    model: anthropic('claude-haiku-4-5');
+    model: anthropic('claude-haiku-4-5'),
     system: `You are a helpful assistant that answers questions based on the search results.
       <rules>
       You should use the search results to answer the question.

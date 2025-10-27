@@ -61,7 +61,7 @@ export const POST = async (req: Request): Promise<Response> => {
       });
 
       const secondStreamResult = streamText({
-        model: anthropic('claude-haiku-4-5');
+        model: anthropic('claude-haiku-4-5'),
         messages: modelMessages,
       });
 
