@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { anthropic } from '@ai-sdk/anthropic';
 import { generateText } from 'ai';
 import { evalite } from 'evalite';
 import { readFileSync } from 'fs';
@@ -24,7 +24,7 @@ evalite('Chain Of Thought Paper', {
   ],
   task: async (input) => {
     const result = await generateText({
-      model: google('gemini-2.0-flash'),
+      model: anthropic('claude-haiku-4-5');
       system: `
         You are a helpful assistant that can answer questions about the chain of thought prompting paper.
       `,

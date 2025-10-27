@@ -1,5 +1,5 @@
 import { generateText } from 'ai';
-import { google } from '@ai-sdk/google';
+import { anthropic } from '@ai-sdk/anthropic';
 import { Tiktoken } from 'js-tiktoken/lite';
 import o200k_base from 'js-tiktoken/ranks/o200k_base';
 

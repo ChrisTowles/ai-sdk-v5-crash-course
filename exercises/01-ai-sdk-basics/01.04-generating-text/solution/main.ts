@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { anthropic } from '@ai-sdk/anthropic';
 import { generateText } from 'ai';
 
 const model = google('gemini-2.0-flash-lite');

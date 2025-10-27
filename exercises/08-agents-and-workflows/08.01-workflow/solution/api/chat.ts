@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { anthropic } from '@ai-sdk/anthropic';
 import { generateText, streamText, type UIMessage } from 'ai';
 
 const formatMessageHistory = (messages: UIMessage[]) => {

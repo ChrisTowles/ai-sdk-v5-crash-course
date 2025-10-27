@@ -1,10 +1,10 @@
-import { google } from '@ai-sdk/google';
+import { anthropic } from '@ai-sdk/anthropic';
 import { consumeStream, streamText } from 'ai';
 
 console.log('Process starting...');
 
 const streamTextResult = streamText({
-  model: google('gemini-2.0-flash'),
+  model: anthropic('claude-haiku-4-5');
   prompt: 'Hello, world!',
   onFinish: () => {
     console.log('Stream finished!');

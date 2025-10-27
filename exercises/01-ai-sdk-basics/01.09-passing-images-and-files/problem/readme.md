@@ -18,7 +18,7 @@ export const POST = async (req: Request): Promise<Response> => {
     convertToModelMessages(messages);
 
   const streamTextResult = streamText({
-    model: google('gemini-2.0-flash'),
+    model: anthropic('claude-haiku-4-5');
     messages: modelMessages,
   });
 

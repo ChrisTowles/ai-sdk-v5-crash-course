@@ -15,7 +15,7 @@ const stream = createUIMessageStream<MyMessage>({
     });
 
     const secondStreamResult = streamText({
-      model: google('gemini-2.0-flash'),
+      model: anthropic('claude-haiku-4-5');
       messages: modelMessages,
     });
 

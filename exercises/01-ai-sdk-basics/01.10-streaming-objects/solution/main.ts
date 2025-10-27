@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { anthropic } from '@ai-sdk/anthropic';
 import { streamObject, streamText } from 'ai';
 import z from 'zod';
 

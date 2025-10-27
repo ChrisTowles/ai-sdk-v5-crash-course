@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { anthropic } from '@ai-sdk/anthropic';
 import {
   convertToModelMessages,
   createUIMessageStream,
@@ -61,7 +61,7 @@ export const POST = async (req: Request): Promise<Response> => {
       });
 
       const secondStreamResult = streamText({
-        model: google('gemini-2.0-flash'),
+        model: anthropic('claude-haiku-4-5');
         messages: modelMessages,
       });
 

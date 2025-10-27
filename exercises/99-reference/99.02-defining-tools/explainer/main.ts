@@ -1,10 +1,10 @@
-import { google } from '@ai-sdk/google';
+import { anthropic } from '@ai-sdk/anthropic';
 import { streamText, tool } from 'ai';
 import { styleText } from 'node:util';
 import z from 'zod';
 
 const result = streamText({
-  model: google('gemini-2.0-flash'),
+  model: anthropic('claude-haiku-4-5');
   prompt: 'Log the message "Hello, world!" to the console',
   tools: {
     logToConsole: tool({

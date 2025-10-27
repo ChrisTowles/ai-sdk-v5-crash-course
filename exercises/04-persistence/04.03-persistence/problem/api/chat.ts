@@ -3,7 +3,7 @@ import {
   streamText,
   type UIMessage,
 } from 'ai';
-import { google } from '@ai-sdk/google';
+import { anthropic } from '@ai-sdk/anthropic';
 import {
   createChat,
   getChat,

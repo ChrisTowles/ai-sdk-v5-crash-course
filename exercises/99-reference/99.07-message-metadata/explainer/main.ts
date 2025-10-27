@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { anthropic } from '@ai-sdk/anthropic';
 import { streamText, type UIMessage } from 'ai';
 
 type MyMetadata = {
@@ -9,7 +9,7 @@ type MyMetadata = {
 type MyMessage = UIMessage<MyMetadata>;
 
 const streamTextResult = streamText({
-  model: google('gemini-2.0-flash'),
+  model: anthropic('claude-haiku-4-5');
   prompt: 'Hello, world!',
 });
 

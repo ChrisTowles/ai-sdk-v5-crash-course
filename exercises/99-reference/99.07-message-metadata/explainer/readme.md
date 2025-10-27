@@ -19,7 +19,7 @@ We then have a standard `streamText` result here:
 
 ```ts
 const streamTextResult = streamText({
-  model: google('gemini-2.0-flash'),
+  model: anthropic('claude-haiku-4-5');
   prompt: 'Hello, world!',
 });
 ```
